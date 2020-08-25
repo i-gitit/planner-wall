@@ -1,0 +1,24 @@
+{
+  "name": "planner-wall",
+  "version": "1.0.0",
+  "description": "A web project to maintain and store to-do lists, useful links and resources and a customizable user interface for each user based on his demand",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "author": "Himanshu jain",
+  "license": "ISC",
+  "devDependencies": {
+    "hover.css": "^2.3.2",
+    "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}
