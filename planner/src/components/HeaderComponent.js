@@ -3,7 +3,8 @@ import { Collapse,
     Navbar,
     NavbarToggler,
     NavbarBrand,
-    NavItem,NavLink,Nav,Button} from 'reactstrap';
+    NavItem,Nav,Navlink,Button} from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
     constructor(props) {
@@ -23,22 +24,23 @@ class Header extends Component {
     render() {
         return(
             <div>
-                <Navbar dark expand="md">
+                <Navbar dark fixed expand="md">
                 <div className="container">
-                    <NavbarToggler onClick={this.toggleNav}/>
+                   
                     <NavbarBrand href="/">Planner WS</NavbarBrand>
+                    <NavbarToggler onClick={this.toggleNav}/>
                     <Collapse isOpen={this.state.isNavOpen} navbar>
                         <Nav className="mr-auto mt-2 mt-lg-0" navbar>
                             <NavItem>
-                                <NavLink href="/">Home</NavLink>
+                                <NavLink className="nav-link" to="/home">Home</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/">Link</NavLink>
+                                <NavLink className="nav-link" to="/notes">Notes</NavLink>
                             </NavItem>
                         </Nav>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/">Login</NavLink>
+                                <NavLink className="nav-link" to="/">Login</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>

@@ -1,3 +1,28 @@
 .navbar-dark{
   background-color: #2FBD07;
 }
+
+.jumbotron {
+  background-color: #76FF63;
+  padding: 50px 30px;
+  /* margin-top: 40px; */
+}
+
+.signup {
+  background: #2FBD07;
+}
+
+.row-content {
+  padding: 50px 0px;
+}
+
+.footer {
+  background: #76FF63;
+  padding: 20px 0px;
+}
+
+.quick-card {
+  border-color: #76FF63; 
+  /* border-width: 10px; */
+  background: #76FF63;
+}
